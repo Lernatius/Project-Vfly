@@ -81,7 +81,7 @@ def collector():    # Collecting datas from serialport
     xbee_data = read_port()
     xbee_data_string = xbee_data.split(",")
     print xbee_data
-    if xbee_data_string[0] == "AAA" && xbee_data_string[-1] == "ZZZ":
+    if xbee_data_string[0] == "AAA" and xbee_data_string[-1] == "ZZZ":
         coordinat = xbee_data_string[1]
         velocity = xbee_data_string[2]
         temperature = xbee_data_string[3]
